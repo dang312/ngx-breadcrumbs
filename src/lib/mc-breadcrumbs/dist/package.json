@@ -1,0 +1,40 @@
+{
+  "name": "@dang312/ngx-breadcrumbs",
+  "version": "0.0.7",
+  "description": "Angular 4+ routing breadcrumbs",
+  "author": {
+    "name": "(null) McNull",
+    "email": "phdang.lh@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McNull/ngx-breadcrumbs"
+  },
+  "keywords": [
+    "angular",
+    "angular4",
+    "breadcrumbs",
+    "routing"
+  ],
+  "homepage": "https://github.com/McNull/ngx-breadcrumbs",
+  "dependencies": {
+    "lodash.template": "^4.4.0",
+    "tslib": "^1.9.0"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=4.0.0 <5.0.0 || >=4.0.0-beta <5.0.0",
+    "@angular/router": ">=4.0.0 <5.0.0",
+    "rxjs": "6.x"
+  },
+  "main": "bundles/dang312-ngx-breadcrumbs.umd.js",
+  "module": "fesm5/dang312-ngx-breadcrumbs.js",
+  "es2015": "fesm2015/dang312-ngx-breadcrumbs.js",
+  "esm5": "esm5/dang312-ngx-breadcrumbs.js",
+  "esm2015": "esm2015/dang312-ngx-breadcrumbs.js",
+  "fesm5": "fesm5/dang312-ngx-breadcrumbs.js",
+  "fesm2015": "fesm2015/dang312-ngx-breadcrumbs.js",
+  "typings": "dang312-ngx-breadcrumbs.d.ts",
+  "metadata": "dang312-ngx-breadcrumbs.metadata.json",
+  "sideEffects": false
+}
