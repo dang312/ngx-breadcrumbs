@@ -17,6 +17,7 @@ import { BrowseBreadcrumbsResolver } from './browse/browse-breadcrumbs.resolver'
 
 
 import { routes } from './shared/app.routes';
+import { of } from 'rxjs/internal/observable/of';
 
 @NgModule({
   imports: [
@@ -36,10 +37,9 @@ export class AppModule {
     breadcrumbsConfig.postProcess = (x) => {
 
       // Ensure the first breadcrumb points to home
-
       let y = x;
 
-      if(x.length && x[0].text !== 'Home') {
+      if (x.length && x[0].text !== 'Home') {
         y = [
           {
             text: 'Home',
@@ -48,7 +48,7 @@ export class AppModule {
         ].concat(x);
       }
 
-      return y;
+      return of(y);
     };
   }
 }

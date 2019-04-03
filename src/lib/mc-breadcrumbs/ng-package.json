@@ -1,10 +1,21 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../../build/ngx-breadcrumbs",
+  "whitelistedNonPeerDependencies": ["rxjs","lodash.template"],
   "lib": {
     "externals": {
       "lodash.template": "lodash.template",
-      "lodash.templatesettings": "lodash.templatesettings"
+      "lodash.templatesettings": "lodash.templatesettings",
+      "rxjs/internal/BehaviorSubject": "Rx.Observable",
+      "rxjs/internal/operators/mergeMap": "Rx.Observable",
+      "rxjs/internal/operators/distinct": "Rx.Observable",
+      "rxjs/internal/operators/filter": "Rx.Observable",
+      "rxjs/internal/operators/toArray": "Rx.Observable",
+      "rxjs/internal/operators/first": "Rx.Observable",
+      "rxjs/internal/operators/concat": "Rx.Observable",
+      "rxjs/internal/observable/of": "Rx.Observable",
+      "rxjs/internal/observable": "Rx.Observable",
+      "rxjs/internal/observable/from": "Rx.Observable"
     },
     "entryFile": "index.ts"
   }

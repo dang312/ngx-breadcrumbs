@@ -1,35 +1,35 @@
 {
-  "name": "ngx-breadcrumbs",
+  "name": "@dang312/ngx-breadcrumbs",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.7",
   "description": "Angular 4+ routing breadcrumbs",
   "author": {
-    "name": "(null) McNull",
-    "email": "noreplies@hotmail.com"
+    "name": "dang312",
+    "email": "phdang.lh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/McNull/ngx-breadcrumbs"
+    "url": "https://github.com/dang312/ngx-breadcrumbs"
   },
   "keywords": [
     "angular",
-    "angular4",
+    "angular6",
     "breadcrumbs",
     "routing"
   ],
-  "homepage": "https://github.com/McNull/ngx-breadcrumbs",
+  "homepage": "https://github.com/dang312/ngx-breadcrumbs",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:pkg": "rimraf ./build && ng-packagr -p src/lib/mc-breadcrumbs/ng-package.json && cp {README.md,LICENSE} build/ngx-breadcrumbs",
+    "build:pkg": "rimraf ./build && ng-packagr -p src/lib/mc-breadcrumbs/ng-package.json && copy README.md build/ngx-breadcrumbs",
     "link:pkg": "./link.sh",
     "build:integration": "npm run build:pkg && npm run link:pkg && ng build --aot --app integration",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^6.0.0",
     "@angular/common": "^6.0.0",
@@ -42,7 +42,6 @@
     "@angular/router": "^6.0.0",
     "bootstrap": "4.0.0-beta",
     "core-js": "^2.4.1",
-    "rxjs": "^6.2.0",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
@@ -62,10 +61,18 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "ng-packagr": "^1.0.0-pre.16",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.3.2",
-    "typescript": "~2.7.2"
+    "typescript": "~2.7.2",
+	"ng-packagr": "^5.0.1"
+  },
+  "peerDependencies": {
+    "rxjs": "6.x"
+  },
+  "ngPackage": {
+    "whitelistedNonPeerDependencies": [
+      "rxjs","lodash.template"
+    ]
   }
 }
